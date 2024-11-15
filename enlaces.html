@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <a name="top"></a>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/logotTLOU.png" alt="logo" width="250"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </header>
+        <main class="shadow">
+            <div class="px-3">
+                <h1 class="text-center bg-azul-o text-white py-3">HTML5 & CSS3</h1>
+            </div>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="p-3">
+                <div id="enlace" class="py-3">
+                    <h2 class="text-center">ENLACES</h2>
+                    <p> Para poner enlaces deberemos de poner <span class="etiqueta">a</span> y a continuacion nos
+                        pondra <span class="atributo">href</span> y pondemos la pagina o imagen </p>
+                    <h3> Enlace a una pagina nuestra </h3>
+                    <a href="index.html"> Ir a Home</a>
+
+                    <h3> Enlace a una pagina de google</h3>
+                    <a href="https://www.google.es/"> Acceder a google</a>
+
+                    <h3> Una pagina de internet atraves de una imagen</h3>
+                    <a href="https://www.google.es/"><img src="img/google.png" alt="logo google"></a>
+
+                    <h3> Una pestaña nueva</h3>
+                    <a href="https://www.google.es/" target="_blank"> Lo hemos conseguido</a>
+
+                    <h3> Enlace a un correo</h3>
+                    <a href="mailto:alumno.405540@ies-azarquiel.es" target="_blank"> Sugerencias </a>
+
+                    <h3> Ejecuta un programa Java</h3>
+                    <a href="javascript: alert ('hola Mundo')"> Mensaje </a>
+
+                    <h3> Enlace de descarga</h3>
+                    <a href="source/calendario.pdf"> Calendario pdf </a>
+
+                    <h3> Enlace con marca</h3>
+                    <a href="#top"> <img src="img/flecha.webp" alt="" class="imgFlecha"> </a>
+
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <h1 class="bg-azul-o text-center text-white py-3">&copy; Ainhoa De Pablo</h1>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>

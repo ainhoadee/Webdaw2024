@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/logotTLOU.png" alt="logo" width="250"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </header>
+        <main class="shadow">
+            <div class="px-3">
+                <h1 class="text-center bg-azul-o text-white py-3">HTML5 & CSS3</h1>
+            </div>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="p-3">
+                <div id="formularios" class="py-3">
+                    <h2 class="text-center">FORMULARIOS</h2>
+                   
+                   <form action="" method="get" class="login">
+                    <h3>Formulario de login</h3>
+                        <fieldset > 
+                            <legend>Login</legend>
+                            <label for=""> User</label>
+                            <input type="text" name="user" id=""> <br>
+                            <label for="pasword">Contraseña</label>
+                            <input type="password" name="password" id="">
+                        </fieldset>
+                    </form>
+                    <form action="" method="get" class="registro">
+                     <h3>Formulario registro</h3>
+                     <fieldset >
+                        <legend>Registro</legend>
+                            <p>
+                            <label for="user">User</label>
+                                <input type="text" name="user" id=""> <br>
+                            </p>
+                            <p>
+                            <label for="Contrasña">Contraseña</label>
+                                <input type="password" name="codigo" id=""> <br>
+                            </p> 
+                            <p>
+                            <label for="cumple">Fecha de nacimiento</label>
+                                <input type="time" name="" id=""> <br>
+                            </p>
+                            <p>
+                            <label for="comentarios">comentarios</label>
+                                <input type="taxtera" name="comentarios" id=""><br>
+                            </p>
+                            <p>
+                            <label for="">Aficiones</label> <br>
+                                <input type="checkbox" name="Cine" id="">Cine <br>
+                                <input type="checkbox" name="Deportes" id="">Deportes <br>
+                                <input type="checkbox" name="Lectura" id="">Lectura <br>
+                                <input type="checkbox" name="Viajar" id="">Viajar <br>
+                            </p>                           
+                            <p>
+                            <label for="">Estado civil</label> <br>
+                                <input type="radio" name="estado" id="">Casado/a <br>
+                                <input type="radio" name="estado" id="">Soltero/a <br>
+                                <input type="radio" name="estado" id="">Viudo/a <br>
+                                <input type="radio" name="estado" id="">Otros <br>
+                            </p>
+                            <p>
+                            <label for="">Provincia</label>
+                            <select name="provincia" id="">
+                                <option value="1">Toledo</option>
+                                <option value="2">Cuenca</option>
+                                <option value="3">C. Real</option>
+                                <option value="4">Guadalajara</option>
+                                <option value="5">Albacete</option>
+                            </select>
+                            </p>
+                            <p>
+                            <label for="">Foto:</label><input type="file" name="" id="">
+                            </p>
+                            <input type="submit" value="Enviar" class="botom botom_blue">   
+                     </fieldset>
+                    </form>
+                    <div class="cb"></div>
+                    <h3 class="text-center">FORMULARIO CON ELEMENTOS HTML5:</h3>
+                    <form action="" method="post" class="form5">
+                        <fieldset>
+                            <legend>Inputs HTML5</legend>
+                            <p>
+                                <label for="">Color:</label> <input type="color" name="color" id="">
+                            </p>
+                            <p>
+                                <label for="">Date:</label> <input type="date" name="date" id="">
+                            </p>
+                            <p>
+                                <label for="">Datetime:</label> <input type="datetime" name="datetime" id="">
+                            </p>
+                            <p>
+                                <label for="">Datetime-local:</label> <input type="datetime-local" name="datetime-local"
+                                    id="">
+                            </p>
+                            <p>
+                                <label for="">Email:</label> <input type="email" name="email" id="">
+                            </p>
+                            <p>
+                                <label for="">Month:</label> <input type="month" name="month" id="">
+                            </p>
+                            <p>
+                                <label for="">Number:</label> <input type="number" name="number" id="" step="4" min="10"
+                                    max="80">
+                                </p>
+                            <p>
+                                <label for="">Range:</label> <input type="range" name="range" id="" step="4" min="10"
+                                    max=80>
+                            </p>
+                            <p>
+                                <label for="">Tel:</label> <input type="tel" name="tel" id="">
+                            </p>
+                            <p>
+                                <label for="">Time:</label> <input type="time" name="time" id="">
+                            </p>
+                            <p>
+                                <label for="">Url:</label> <input type="url" name="url" id="">
+                            </p>
+                            <p>
+                                <label for="">Week:</label> <input type="week" name="week" id="">
+                            </p>
+                            <p>
+                                <input type="submit" value="Aceptar" id="" class="botom botom_red">
+                            </p>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <h1 class="bg-azul-o text-center text-white py-3">&copy; Ainhoa De Pablo</h1>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>

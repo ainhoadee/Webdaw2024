@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/logotTLOU.png" alt="logo" width="250"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </header>
+        <main class="shadow">
+            <div class="px-3">
+                <h1 class="text-center bg-azul-o text-white py-3">HTML5 & CSS3</h1>
+            </div>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="p-3">
+                <div id="listas" class="py-3">
+                    <h2 class="text-center">LISTAS</h2>
+
+                    <h3> Listas desordenadas</h3>
+
+                    <ul>
+                        <li>elemento 1</li>
+                        <li>elemento 2</li>
+                        <li>elemento 3</li>
+                        <li>elemento 4</li>
+                        <li>elemento 5</li>
+                    </ul>
+
+                    <h3> Listas ordenadas</h3>
+
+                    <ol>
+                        <li>Elementos</li>
+                        <li>Elementos</li>
+                        <li>Elementos</li>
+                        <li>Elementos</li>
+                    </ol>
+                    
+                    <h3> Listas desordenadas de varios niveles</h3>
+                    
+                    <ul>
+                            <li>elemento</li>
+                                <ul>
+                                    <li>elemento</li>
+                                    <li>elemento</li>
+                                        <ul>
+                                            <li>elemento</li>
+                                            <li>elemento</li>
+                                        </ul>
+                                    <li>elemento</li>
+                                </ul>
+                            
+                        </li>
+                        <li>
+                            <li>elemento</li>
+                                <ul> 
+                                    <li>elemento</li>
+                                    <ul>
+                                    <li>elemento</li>
+                                    <li>elemento</li>
+                                    <li>elemento</li>
+                                </ul></ul>
+                        <li>
+                            <li>elemento</li>
+                                <ul>
+                                    <li>elemento</li>
+                                    <li>elemento</li>
+                                    <li>elemento</li>
+                                    <li>elemento</li>
+                                </ul>
+                        </li>
+                    </ul>
+                    
+                    <h3> Listas ordenadas de varios niveles</h3>
+                    
+                    <ol>
+                            <li>elemento</li>
+                                <ol>
+                                    <li>elemento</li>
+                                    <li>elemento</li>
+                                        <ol>
+                                            <li>elemento</li>
+                                            <li>elemento</li>
+                                        </ol>
+                                    <li>elemento</li>
+                                </ol>
+                            
+                        </li>
+                        <li>
+                            <li>elemento</li>
+                                <ol> 
+                                    <li>elemento</li>
+                                    <ol>
+                                    <li>elemento</li>
+                                    <li>elemento</li>
+                                    <li>elemento</li>
+                                </ol></ol>
+                        <li>
+                            <li>elemento</li>
+                                <ol>
+                                    <li>elemento</li>
+                                    <li>elemento</li>
+                                    <li>elemento</li>
+                                    <li>elemento</li>
+                                </ol>
+                        </li>
+                    </ol>
+
+                    <h3> Listas Customizada</h3>
+                    
+                    <ul class="custom">
+                        <li>
+                        File 
+                            <ul>
+                                <li>elemento</li>
+                                <li>elemento
+                                    <ul>
+                                        <li>elemento</li>
+                                        <li>elemento</li>
+                                    </ul>
+                                </li>    
+                                <li>elemento</li>
+                            </ul>
+                        
+                        </li>
+                        <li>elemento
+                            <ul> 
+                                <li>elemento
+                                    <ul>
+                                        <li>elemento</li>
+                                        <li>elemento</li>
+                                        <li>elemento</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                        elemento
+                            <ul>
+                                <li>elemento</li>
+                                <li>elemento</li>
+                                <li>elemento</li>
+                            </ul>
+                        </li>
+                </ul>
+                    
+
+                <h3> Listas Customizada con imagenes</h3>
+                    
+                    <ul class="custome">
+                        <li>
+                        File 
+                            <ul>
+                                <li>elemento</li>
+                                <li>elemento
+                                    <ul>
+                                        <li>elemento</li>
+                                        <li>elemento</li>
+                                    </ul>
+                                </li>    
+                                <li>elemento</li>
+                            </ul>
+                        
+                        </li>
+                
+                </ul>
+
+
+
+                <dl>
+                    <dl class="defini">Ventana</dl>
+                    <dd>Es un cristal trasparente que nos permite ver el exterior</dd>
+                </dl>
+                    
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <h1 class="bg-azul-o text-center text-white py-3">&copy; Ainhoa De Pablo</h1>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>
